@@ -6,7 +6,7 @@
 ;; Homepage: https://github.com/duckwork/-
 ;; Keywords: 💩
 
-;; Package-Version: 100
+;; Package-Version: 101
 ;; Package-Requires: ((emacs "24.1"))
 
 ;;; Commentary:
@@ -19,7 +19,7 @@
 (defun 💩 (n)
   "💩 x N."
   (interactive "p")
-  (dotimes (or n 1)
+  (dotimes (_ n) ; thanks wasamasa
     (insert "💩")))
 
 (provide 'poo)
